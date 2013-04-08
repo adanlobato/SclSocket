@@ -149,7 +149,7 @@ class Socket implements SocketInterface
      */
     public function read($length = 1024)
     {
-        return fgets($this->socket, $length);
+        return fread($this->socket, $length);
     }
 
     /**
